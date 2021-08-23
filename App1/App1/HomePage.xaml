@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.HomePage" 
+            BarBackgroundColor="{StaticResource MycolorBackgroundGray850}">
+
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem  x:Name="addTravel"  Command="{Binding NavCommand}" Text="Add" IconImageSource="ic_action_add_circle.png"/>
+    </TabbedPage.ToolbarItems>
+    
+    <local:HistoryPage Title="History" IconImageSource="ic_action_home.png"/>
+    <local:MapPage Title="Map" IconImageSource="ic_action_location_on.png"/>
+    <local:ProfilePage Title="Profile" IconImageSource="ic_action_person"/>
+
+
+</TabbedPage>

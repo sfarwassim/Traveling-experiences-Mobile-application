@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.App" >
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <Color x:Key="MycolorBackgroundGray900">#FF212121</Color>
+            <Color x:Key="MycolorBackgroundGray850">#FF303030</Color>
+            <Color x:Key="MycolorBackgroundGray800">#FF424242</Color>
+            <Color x:Key="MycolorTextGray">#FFBDBDBD</Color>
+            <Color x:Key="MycolorTextAccent">#FFFFE57F</Color>
+            <Color x:Key="MycolorTextAmber">#FFFFCA28</Color>
+
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource MycolorBackgroundGray850}" />
+                <Setter Property="TextColor" Value="{StaticResource MycolorTextAmber}" />
+            </Style>
+
+            <Style TargetType="Entry">
+                <Setter Property="PlaceholderColor" Value="{StaticResource MycolorTextAmber}" />
+                <Setter Property="TextColor" Value="{StaticResource MycolorTextGray}" />
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource MycolorTextGray}" />
+           </Style>
+
+           
+
+            <Style TargetType="{x:Type NavigationPage}">
+                <Setter Property="BarBackgroundColor"
+                    Value="{StaticResource MycolorBackgroundGray850}" />
+                <Setter Property="BarTextColor"
+                    Value="{StaticResource MycolorTextGray}" />
+            </Style>
+
+            <Style TargetType="{x:Type ContentPage}"
+                   ApplyToDerivedTypes="True">
+                <Setter Property="BackgroundColor"
+                    Value="{StaticResource MycolorBackgroundGray900}" />
+            </Style>
+
+          
+
+
+
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

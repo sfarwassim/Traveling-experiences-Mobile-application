@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.ProfilePage">
+    
+        <StackLayout Margin="20,50,20,0"> 
+            <Label x:Name="postCountLabel"
+                HorizontalOptions="Center" 
+                 Text="--" TextColor="{StaticResource MycolorTextAmber}"/>
+        <Label Text="posts" HorizontalOptions="Center"/>
+        <ListView x:Name="categoriesList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell  Text="{Binding Path=Key}" Detail="{Binding Path=Value}" DetailColor="{StaticResource MycolorTextGray}" TextColor="{StaticResource MycolorTextGray}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>   
+    </StackLayout>
+   
+</ContentPage>

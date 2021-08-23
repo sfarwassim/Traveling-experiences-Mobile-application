@@ -1,0 +1,3 @@
+D:\Myprojects\XamarinProjects\App1\App1\App1.Android\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
+D:\Myprojects\XamarinProjects\App1\App1\App1.Android\obj\Debug\90\build.props
+D:\Myprojects\XamarinProjects\App1\App1\App1.Android\obj\Debug\90\adb.props

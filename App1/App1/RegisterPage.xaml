@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.RegisterPage">
+    
+    <StackLayout x:Name="ContainerStackLayout" VerticalOptions="Center" Margin="20">
+
+        <Entry x:Name="emailEntry" Text="{Binding EmailAddress ,Mode=TwoWay}" Placeholder="Email Address" PlaceholderColor="{StaticResource MycolorTextGray}" />
+        <Entry x:Name="passwordEntry" Text="{Binding Password ,Mode=TwoWay}" Placeholder=" Password" IsPassword="True" PlaceholderColor="{StaticResource MycolorTextGray}"  />
+        <Entry x:Name="confirmationPasswordEntry" Text="{Binding ConfirmPassword,Mode=TwoWay}" Placeholder="Confirm Password" IsPassword="True" PlaceholderColor="{StaticResource MycolorTextGray}"  />
+
+        <Button x:Name="RegisterButton" Command="{Binding registerCommand}" CommandParameter="{Binding User}"  Text="Register" Margin="40" />
+
+   </StackLayout>
+        
+</ContentPage>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage"
+             BackgroundColor="{StaticResource MycolorBackgroundGray900}">
+
+    <StackLayout  VerticalOptions="Center" Margin="20">
+        <Image x:Name="iconImage"
+               Aspect="AspectFit"
+               HorizontalOptions="FillAndExpand"
+               HeightRequest="150"
+               Margin="0,0,0,50"/>
+        <Entry x:Name="emailEntry" Text="{Binding EmailAddress,Mode=TwoWay}" Placeholder="Email Address" PlaceholderColor="{StaticResource MycolorTextGray}"  />
+        <Entry x:Name="passwordEntry" Text="{Binding Password ,Mode=TwoWay}" Placeholder=" Password" IsPassword="True"  PlaceholderColor="{StaticResource MycolorTextGray}" />
+        <Button x:Name="LoginButton" Command="{Binding loginCommand}"  CommandParameter="{Binding User}" Text="Login" Margin="0,50,0,0" />
+        <Button x:Name="RegisterUserButton" Command="{Binding registerNavigationCommand}"  Text="Register" HorizontalOptions="End" BackgroundColor="{StaticResource MycolorBackgroundGray900}"/>
+
+
+    </StackLayout>
+
+</ContentPage>
